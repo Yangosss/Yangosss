@@ -1,198 +1,1179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pillycase | Medical-Grade Stainless Steel Pill Case & Organizer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pillycase | Medical-Grade Stainless Steel Pill Case &amp; Organizer</title>
+<meta name="description" content="Meet Pillycase, a 100% medical-grade stainless steel pill case. Perfect for daily pills, supplements, and vitamins. Join the waitlist for early founder edition access!">
+<link rel="canonical" href="https://pillycase.com/">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <meta name="description" content="Meet Pillycase, a 100% medical-grade stainless steel pill case. Perfect for daily pills, supplements, and vitamins. Join the waitlist for early founder edition access!">
-    
-    <!-- Preconnect and preload for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    </noscript>
-    <!-- Inline only critical CSS here -->
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            letter-spacing: -0.03em;
-            font-weight: 200;
-            max-width: 700px;
-            margin: 80px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #333;
-            text-align: left;
-        }
+<!-- Social preview (Open Graph & Twitter Card). Scrapers need absolute URLs. -->
+<meta property="og:title" content="Pillycase | Medical-Grade Stainless Steel Pill Case & Organizer">
+<meta property="og:description" content="A pill case made with medical grade stainless steel. One simple, clean storage solution for your daily pills, supplements or vitamins.">
+<meta property="og:image" content="https://pillycase.com/og-image.jpg">
+<meta property="og:url" content="https://pillycase.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pillycase | Medical-Grade Stainless Steel Pill Case & Organizer">
+<meta name="twitter:description" content="A pill case made with medical grade stainless steel. One simple, clean storage solution for your daily pills, supplements or vitamins.">
+<meta name="twitter:image" content="https://pillycase.com/og-image.jpg">
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            font-weight: 600;
-            letter-spacing: -0.05em;
-            line-height: 1.15;
-            color: #111;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --pad: clamp(14px, 2.4vw, 30px);
+    --ink:#000;
+    --line:#000;
+    --safe-t: env(safe-area-inset-top, 0px);
+    --safe-b: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+  /* while a round is live the page must not scroll out from under the player */
+  html.lock, html.lock body{overflow:hidden;overscroll-behavior:none}
+  body{
+    background:#fff;
+    color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-feature-settings:"tnum" 1,"cv05" 1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-tap-highlight-color:transparent;
+  }
+  a{color:inherit}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-        p {
-            font-size: 1.1em;
-            margin-bottom: 1em;
-            font-weight: 300;
-            letter-spacing: -0.03em;
-            line-height: 1.6;
-            color: #555;
-        }
+  /* ══ hero / game ═════════════════════════════════════ */
+  .app{height:100vh;height:100svh;display:flex;flex-direction:column}
 
-        .cta-section {
-            margin-top: 3em;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
+  /* ── bars ─────────────────────────────────────────── */
+  .bar{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px var(--pad)}
+  .bar--top{border-bottom:1px solid var(--line);padding-top:calc(11px + var(--safe-t))}
+  .bar--bot{border-top:1px solid var(--line)}
+  .mono{font-size:9.5px;font-weight:700;letter-spacing:.19em;text-transform:uppercase;white-space:nowrap}
+  .dim{opacity:.42}
 
-        .cta-section input[type="email"] {
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1em;
-            flex-grow: 1;
-            max-width: 250px;
-            box-sizing: border-box;
-            color: #555;
-        }
+  .brand{display:flex;align-items:center;gap:9px;text-decoration:none}
+  .brand b{font-weight:900;letter-spacing:-.045em;font-size:clamp(16px,2.4vw,21px);line-height:1}
+  .brand svg{display:block;flex:0 0 auto}
 
-        .cta-section input[type="email"]::placeholder {
-            color: #555;
-            opacity: 1;
-        }
+  .tools{display:flex;align-items:center;gap:clamp(10px,2vw,22px)}
+  .tbtn{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:4px 0;letter-spacing:.19em;text-decoration:none}
+  .tbtn.mono{font-size:9.5px;font-weight:700;text-transform:uppercase}
+  .tbtn:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}
+  .tbtn:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid #000;outline-offset:3px}
 
-        .cta-section button {
-            background-color: #eee;
-            color: #555;
-            padding: 12px 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
+  .skip{display:inline-flex;align-items:center;gap:6px}
+  .skip .arr{display:inline-block}
+  @media (prefers-reduced-motion: no-preference){
+    .skip .arr{animation:nudge 1.8s ease-in-out infinite}
+    @keyframes nudge{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(3px)}}
+  }
+  html.lock .bar--bot .skip{visibility:hidden}
 
-        .cta-section button:hover {
-            background-color: #e0e0e0;
-        }
+  /* ── stage ────────────────────────────────────────── */
+  .stage{position:relative;flex:1 1 auto;min-height:0}
+  #c{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
+  .stage[data-mode="play"] #c{cursor:ew-resize}
 
-        .product-gif {
-            margin-top: 5em;
-            width: 100%;
-            height: auto;
-            display: block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
+  .rail{position:absolute;top:50%;font-size:9px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;opacity:.34;pointer-events:none;writing-mode:vertical-rl;white-space:nowrap}
+  .rail.l{left:8px;transform:translateY(-50%) rotate(180deg)}
+  .rail.r{right:8px;transform:translateY(-50%)}
+  @media (max-width:900px){.rail{display:none}}
 
-        .top-nav {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .top-nav a {
-            margin-left: 15px;
-            color: #444;
-            text-decoration: none;
-            font-size: 0.9em;
-            font-weight: 400;
-            letter-spacing: -0.03em;
-            line-height: 1.3;
-        }
-        .top-nav a:hover {
-            text-decoration: underline;
-        }
+  /* ── hud ──────────────────────────────────────────── */
+  .hud{position:absolute;left:0;right:0;top:0;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:calc(var(--pad)*.7) var(--pad);opacity:0;transition:opacity .3s ease;pointer-events:none}
+  .hud.on{opacity:1}
+  .stat{display:flex;flex-direction:column;gap:6px}
+  .stat.mid{align-items:center}
+  .stat.rt{align-items:flex-end}
+  .k{font-size:8.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.4;white-space:nowrap}
+  .v{font-size:clamp(26px,5.4vw,42px);font-weight:900;letter-spacing:-.05em;line-height:.86;font-variant-numeric:tabular-nums}
+  .dots{display:flex;gap:4px;padding-top:3px}
+  .dots i{width:9px;height:9px;border:1.4px solid #000;display:block;transition:background .18s ease,transform .18s ease}
+  .dots i.on{background:#000;transform:scale(1.12)}
+  .lives{display:flex;gap:4px;padding-top:5px}
+  .lives i{width:9px;height:9px;border:1.4px solid #000;background:#000;display:block;transition:background .2s ease,opacity .2s ease}
+  .lives i.off{background:#fff;opacity:.28}
 
-        .subheading {
-            font-size: 1.2em;
-            font-weight: 400;
-            line-height: 1.3;
-            letter-spacing: -0.03em;
-            color: #555;
-        }
-        .light-text {
-            font-weight: 300;
-            color: #555;
-            line-height: 1.6;
-            letter-spacing: -0.03em;
-            font-size: 1.1em;
-        }
-    </style>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  /* ── intro overlay ────────────────────────────────── */
+  .ov{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;
+      padding:clamp(18px,5vh,54px) var(--pad) 0;pointer-events:none;
+      transition:opacity .34s ease, transform .5s cubic-bezier(.2,.85,.25,1)}
+  .ov[hidden]{display:none}
+  .ov.out{opacity:0;transform:translateY(-14px)}
+  .ov .btn{pointer-events:auto}
 
-    <!-- Social Preview (Open Graph & Twitter Card) -->
-    <meta property="og:title" content="Pillycase | Medical-Grade Stainless Steel Pill Case & Organizer">
-    <meta property="og:description" content="A pill case made with medical grade stainless steel. One simple, clean storage solution for your daily pills, supplements or vitamins.">
-    <meta property="og:image" content="og-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com/">
-    <meta property="og:type" content="website">
+  .eyebrow{font-size:9.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;opacity:.5}
+  h1{margin-top:clamp(10px,2.4vh,20px);font-weight:900;text-transform:uppercase;
+     font-size:clamp(42px,10.4vw,124px);line-height:.82;letter-spacing:-.055em}
+  .sub{margin-top:clamp(12px,2vh,20px);max-width:40ch;font-size:clamp(12.5px,1.45vw,15px);line-height:1.55;font-weight:450;opacity:.6}
+  .btn{margin-top:clamp(16px,2.6vh,26px);appearance:none;border:2px solid #000;background:#000;color:#fff;
+       border-radius:999px;padding:14px 30px;cursor:pointer;text-decoration:none;display:inline-block;
+       font-family:inherit;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;
+       transition:background .18s ease,color .18s ease,transform .18s ease}
+  .btn:hover{background:#fff;color:#000}
+  .btn:active{transform:scale(.97)}
+  .btn:disabled{opacity:.5;cursor:default}
+  .btn--ghost{background:#fff;color:#000}
+  .btn--ghost:hover{background:#000;color:#fff}
+  .keys{margin-top:14px;font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.38}
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pillycase | Medical-Grade Stainless Steel Pill Case & Organizer">
-    <meta name="twitter:description" content="A pill case made with medical grade stainless steel. One simple, clean storage solution for your daily pills, supplements or vitamins.">
-    <meta name="twitter:image" content="og-image.jpg">
+  .claims{display:flex;align-items:center;gap:clamp(8px,1.6vw,16px);flex-wrap:nowrap;overflow:hidden;min-width:0}
+  .claims i{width:4px;height:4px;background:#000;opacity:.35;flex:0 0 auto;display:block}
+  @media (max-width:640px){
+    .claims span:nth-child(7),.claims i:nth-child(6){display:none}
+  }
+  @media (max-width:430px){
+    .claims span:nth-child(5),.claims i:nth-child(4){display:none}
+    #spec{display:none}
+  }
+  @media (max-width:400px){
+    .claims span:nth-child(3),.claims i:nth-child(2){display:none}
+  }
+  /* short / landscape phones: keep the case clear of the copy */
+  @media (max-height:560px){
+    h1{font-size:clamp(30px,6.4vw,56px);margin-top:8px}
+    .sub,.keys{display:none}
+    .ov{padding-top:14px}
+    .ov .btn{margin-top:14px;padding:11px 24px}
+    .hud .v{font-size:clamp(22px,4.6vw,32px)}
+  }
 
+  /* ══ the case (scroll-to section) ════════════════════ */
+  .case{border-top:2px solid var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(48px,10vh,110px) var(--pad) clamp(48px,9vh,96px)}
+  .case h2{margin-top:clamp(10px,2vh,18px);font-weight:900;text-transform:uppercase;
+           font-size:clamp(40px,9vw,112px);line-height:.84;letter-spacing:-.055em}
+  .lede{margin-top:clamp(18px,3vh,30px);max-width:42ch;font-size:clamp(16px,1.8vw,20px);line-height:1.42;font-weight:500;letter-spacing:-.018em}
+  .lede + .lede{margin-top:8px;font-weight:450;opacity:.6}
+
+  .specs{margin-top:clamp(36px,7vh,72px);display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .specs > div{background:#fff;padding:clamp(14px,2.2vw,22px);display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-height:clamp(112px,15vw,156px)}
+  .specs .v{font-size:clamp(32px,5.6vw,58px)}
+  .specs .n{font-size:12.5px;line-height:1.4;font-weight:450;opacity:.55;margin-top:6px}
+  @media (max-width:640px){ .specs{grid-template-columns:repeat(2,1fr)} }
+
+  .join{margin-top:clamp(36px,7vh,72px);padding-top:clamp(18px,3vh,26px);border-top:2px solid var(--line);
+        display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,52px);align-items:end}
+  .join h3{margin-top:10px;font-weight:900;text-transform:uppercase;font-size:clamp(30px,4.8vw,56px);line-height:.86;letter-spacing:-.05em}
+  .join .meta{margin-top:14px}
+  @media (max-width:760px){ .join{grid-template-columns:1fr} }
+
+  /* ── waitlist form (shared by section + popup) ───── */
+  .wl{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px}
+  .wl input[type=email]{flex:1 1 190px;min-width:0;appearance:none;border:0;border-bottom:2px solid #000;border-radius:0;background:transparent;
+      padding:12px 2px 10px;font:inherit;font-size:16px;font-weight:500;letter-spacing:-.01em;color:#000}
+  .wl input[type=email]::placeholder{color:#000;opacity:.32}
+  .wl input[type=email]:focus{outline:none;box-shadow:0 2px 0 #000}
+  .wl .btn{margin-top:0}
+  .wl .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .status{flex-basis:100%;min-height:1.3em;font-size:12.5px;font-weight:500;letter-spacing:-.005em;line-height:1.3}
+  .status.err{font-weight:700}
+  .joined{display:none;font-size:clamp(15px,1.6vw,18px);font-weight:600;letter-spacing:-.02em;line-height:1.35}
+  .joined::before{content:"";display:inline-block;width:9px;height:9px;background:#000;margin-right:10px;vertical-align:1px}
+  html.is-joined .wl{display:none}
+  html.is-joined .joined{display:block}
+
+  .fig{margin-top:clamp(36px,7vh,72px)}
+  .fig video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#000;border:1px solid var(--line)}
+  .fig figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px}
+  .back{margin-top:clamp(28px,5vh,48px);text-align:center}
+
+  .site-foot{border-top:1px solid var(--line);padding-bottom:var(--safe-b)}
+  .site-foot nav{display:flex;gap:clamp(12px,2.4vw,24px)}
+  .site-foot nav a{text-decoration:none}
+  .site-foot nav a:hover{text-decoration:underline;text-underline-offset:3px}
+
+  /* ══ popup after death ═══════════════════════════════ */
+  .modal{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;
+         padding:calc(var(--pad) + var(--safe-t)) var(--pad) calc(var(--pad) + var(--safe-b));
+         background:rgba(255,255,255,.84);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
+         transition:opacity .3s ease}
+  .modal[hidden]{display:none}
+  .modal.out{opacity:0}
+  .card{position:relative;width:100%;max-width:440px;max-height:100%;overflow:auto;background:#fff;border:2px solid #000;border-radius:20px;
+        transition:transform .5s cubic-bezier(.2,.85,.25,1)}
+  .modal.out .card{transform:translateY(14px)}
+  .card:focus{outline:none}
+  .card-top{display:flex;justify-content:space-between;align-items:center;padding:11px 18px;border-bottom:1px solid var(--line)}
+  .card-sec{padding:18px}
+  .card-sec + .card-sec{border-top:1px solid var(--line)}
+  .result{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:12px}
+  .result .big{display:block;font-weight:900;letter-spacing:-.06em;line-height:.8;font-size:clamp(64px,17vw,104px);font-variant-numeric:tabular-nums}
+  .result .k{display:block;margin-top:8px}
+  .result .scores{display:flex;gap:18px;padding-bottom:2px}
+  .result .scores > div{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+  .result .scores .v{font-size:clamp(20px,5vw,26px)}
+  .card h3{margin-top:8px;font-weight:900;text-transform:uppercase;font-size:clamp(24px,6.4vw,32px);line-height:.88;letter-spacing:-.05em}
+  .card .note{margin-top:8px;font-size:13.5px;line-height:1.45;font-weight:450;opacity:.6}
+  .card .wl{margin-top:12px}
+  .card .joined{margin-top:12px}
+  .card-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .card-actions .btn{margin-top:0}
+  .card-foot{padding:0 18px 14px;text-align:center}
+  .card-foot .keys{margin-top:0}
+  @media (max-height:620px){
+    .card-sec{padding:14px 18px}
+    .result .big{font-size:clamp(48px,12vh,72px)}
+    .card .note,.card-foot{display:none}
+  }
+</style>
 </head>
 <body>
-    <div class="top-nav">
-        <a href="https://x.com/itsRomBom" target="_blank" rel="noopener">twitter</a>
-        <a href="https://www.tiktok.com/@daniels.archive" target="_blank" rel="noopener">tiktok</a>
-        <a href="https://www.instagram.com/itsdanielyang" target="_blank" rel="noopener">instagram</a>
+<div class="app" id="app">
+
+  <header class="bar bar--top">
+    <a class="brand" href="#app" aria-label="pillycase, back to top">
+      <svg width="24" height="13" viewBox="0 0 24 13" aria-hidden="true">
+        <rect x="1.1" y="1.1" width="21.8" height="10.8" rx="5.4" fill="none" stroke="#000" stroke-width="2.2"/>
+        <line x1="12" y1="1.1" x2="12" y2="11.9" stroke="#000" stroke-width="2.2"/>
+      </svg>
+      <b>pillycase</b>
+    </a>
+    <div class="tools mono">
+      <span class="dim" id="spec">316L medical-grade stainless steel</span>
+      <button class="tbtn mono" id="sound" aria-pressed="true">Sound on</button>
+    </div>
+  </header>
+
+  <main class="stage" id="stage" data-mode="attract">
+    <span class="rail l">Plastic free — Aluminium free</span>
+    <span class="rail r">100% recyclable — One piece</span>
+
+    <canvas id="c" aria-label="Keep the Week, a sorting game: steer the pill case and catch each day's pill in its compartment"></canvas>
+
+    <div class="hud" id="hud" aria-hidden="true">
+      <div class="stat">
+        <span class="k">Weeks kept</span>
+        <span class="v" id="vWeeks">0</span>
+      </div>
+      <div class="stat mid">
+        <span class="k">This week</span>
+        <span class="dots" id="dots"></span>
+      </div>
+      <div class="stat rt">
+        <span class="k">Score</span>
+        <span class="v" id="vScore">0</span>
+        <span class="lives" id="lives"></span>
+      </div>
     </div>
 
-    <h1>hi, this is pillycase.</h1>
+    <section class="ov" id="intro">
+      <span class="eyebrow">Seven compartments · one piece of steel</span>
+      <h1>Keep<br>the week</h1>
+      <p class="sub">A pill case should be the least interesting thing you own. Steer the case, drop each day into its compartment, and snap the lid on anything that isn't steel-clean.</p>
+      <button class="btn" id="start">Open the case</button>
+      <span class="keys" id="keys">Move to sort · click to snap the lid</span>
+    </section>
+  </main>
 
-    <p class="subheading">it's a pill case made with medical grade stainless steel.</p>
+  <footer class="bar bar--bot">
+    <div class="claims mono">
+      <span>Plastic free</span><i></i>
+      <span>Aluminium free</span><i></i>
+      <span>100% recyclable</span><i></i>
+      <span>Dishwasher safe</span>
+    </div>
+    <a class="tbtn mono skip" href="#case">Skip the game <span class="arr" aria-hidden="true">↓</span></a>
+  </footer>
+</div>
 
-    <p class="subheading">one simple, clean storage solution for your daily pills, supplements or vitamins.</p>
-    
-    <p class="light-text">plastic free.<br>
-    aluminium free .<br>
-    100% recyclable. enjoy.</p>
+<section class="case" id="case" aria-labelledby="case-h">
+  <div class="wrap">
+    <span class="eyebrow">Medical-grade stainless steel</span>
+    <h2 id="case-h">Hi, this is<br>pillycase.</h2>
+    <p class="lede">It's a pill case made with medical grade stainless steel.</p>
+    <p class="lede">One simple, clean storage solution for your daily pills, supplements or vitamins.</p>
 
-    <form id="waitlist-form" class="cta-section">
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">Join the waitlist</button>
-    </form>
+    <div class="specs" role="list">
+      <div role="listitem"><span class="k">Material</span><div><span class="v">316L</span><p class="n">Medical-grade stainless steel, one piece.</p></div></div>
+      <div role="listitem"><span class="k">Compartments</span><div><span class="v">07</span><p class="n">Monday to Sunday.</p></div></div>
+      <div role="listitem"><span class="k">Plastic</span><div><span class="v">0%</span><p class="n">Plastic free.</p></div></div>
+      <div role="listitem"><span class="k">Aluminium</span><div><span class="v">0%</span><p class="n">Aluminium free.</p></div></div>
+      <div role="listitem"><span class="k">Recyclable</span><div><span class="v">100%</span><p class="n">Steel goes back to steel.</p></div></div>
+      <div role="listitem"><span class="k">Cleaning</span><div><span class="v">Easy</span><p class="n">Dishwasher safe.</p></div></div>
+    </div>
 
-    <script>
-    document.getElementById('waitlist-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        var email = this.email.value.trim();
-        // Stricter email regex
-        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailPattern.test(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-        fetch('https://script.google.com/macros/s/AKfycbyx4d7V9Jk_NZFjKx67Tt7i9ZlFOvnMFYU8YtowfePpaTn6cuonAoY8bZniefYVDWaw/exec', {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'email=' + encodeURIComponent(email)
-        }).then(() => {
-            alert('Thank you! You are on the waitlist.');
-            this.reset();
-        });
-    });
-    </script>
+    <div class="join">
+      <div>
+        <span class="k">Founder edition</span>
+        <h3>Join the<br>waitlist</h3>
+        <p class="mono dim meta">Ships 2026 — €39</p>
+      </div>
+      <div>
+        <form class="wl js-waitlist" novalidate>
+          <label class="sr" for="wl-page">Email address</label>
+          <input id="wl-page" type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+          <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn" type="submit">Join the waitlist</button>
+          <p class="status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="joined">You're on the waitlist. We'll email you when the founder edition opens.</p>
+      </div>
+    </div>
 
-    <video class="product-gif" width="700" height="auto" autoplay muted loop playsinline>
+    <figure class="fig">
+      <video width="1280" height="720" autoplay muted loop playsinline preload="metadata" aria-label="pillycase demo">
         <source src="my-pillycase-demo.webm" type="video/webm">
         <source src="my-pillycase-demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+      </video>
+      <figcaption class="mono"><span>pillycase</span><span class="dim">316L stainless steel</span></figcaption>
+    </figure>
 
+    <p class="back"><a class="btn btn--ghost" href="#app">Back to the game ↑</a></p>
+  </div>
+</section>
+
+<footer class="site-foot" id="foot">
+  <div class="bar">
+    <span class="mono dim">© 2026 pillycase</span>
+    <nav class="mono" aria-label="Social">
+      <a href="https://x.com/itsRomBom" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.tiktok.com/@daniels.archive" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.instagram.com/itsdanielyang" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- sign-up popup, shown after every game over -->
+<div class="modal out" id="over" role="dialog" aria-modal="true" aria-labelledby="overKick" hidden>
+  <div class="card" tabindex="-1">
+    <div class="card-top mono">
+      <span>Game over</span>
+      <button class="tbtn mono" id="close" aria-label="Close and return to the start screen">Close ✕</button>
+    </div>
+
+    <div class="card-sec">
+      <span class="eyebrow" id="overKick">The week got away</span>
+      <div class="result">
+        <div>
+          <span class="big" id="overWeeks">00</span>
+          <span class="k">Weeks kept</span>
+        </div>
+        <div class="scores">
+          <div><span class="k">Score</span><span class="v" id="overScore">0</span></div>
+          <div><span class="k">Best</span><span class="v" id="overBest">0</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-sec">
+      <span class="k">Founder edition</span>
+      <h3>Keep more<br>than a week</h3>
+      <p class="note">Join the waitlist for early access to the founder edition.</p>
+      <form class="wl js-waitlist" novalidate>
+        <label class="sr" for="wl-modal">Email address</label>
+        <input id="wl-modal" type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Join</button>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="joined">You're on the waitlist. We'll email you when the founder edition opens.</p>
+    </div>
+
+    <div class="card-sec card-actions">
+      <button class="btn btn--ghost" id="again">Go again</button>
+      <a class="tbtn mono skip" id="toCase" href="#case">See the case <span class="arr" aria-hidden="true">↓</span></a>
+    </div>
+    <div class="card-foot"><span class="keys">Steel doesn't forget. Neither should you.</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ══ setup ═══════════════════════════════════════════ */
+var cvs = document.getElementById('c');
+var ctx = cvs.getContext('2d');
+var stage = document.getElementById('stage');
+var DAYS = ['MO','TU','WE','TH','FR','SA','SU'];
+var FONT = 'Inter,"Helvetica Neue",Helvetica,Arial,sans-serif';
+var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var COARSE = window.matchMedia('(pointer: coarse)').matches;
+
+var W=0,H=0,DPR=1;
+var caseW=0, cell=0, caseH=0, caseY=0, pillW=0, pillH=0, gap=48;
+var caseX=null, caseTX=0;
+var best=0;
+
+/* ══ storage (best score, waitlist state) ════════════ */
+function store(k,v){
+  try{
+    if(v===undefined) return window.localStorage.getItem(k);
+    window.localStorage.setItem(k,v);
+  }catch(e){ return null; }
+}
+best = parseInt(store('pillycase:best'),10) || 0;
+var root = document.documentElement;
+if(store('pillycase:joined')==='1') root.classList.add('is-joined');
+
+var L_IN=0.09, L_HOLD=0.20, L_OUT=0.13, LID_T=L_IN+L_HOLD+L_OUT;
+
+var S = {
+  mode:'attract', t:0,
+  pills:[], parts:[], pops:[], cellFx:[],
+  lid:{active:false,t:0}, cool:0,
+  spawnT:0.7, nextAuto:3,
+  score:0, weeks:0, wp:0, streak:0, lives:3, correct:0,
+  shake:0, msg:null, bigMsg:null, caseKick:0
+};
+
+function clamp(v,a,b){ return v<a?a:(v>b?b:v); }
+function rnd(a,b){ return a+Math.random()*(b-a); }
+
+/* ══ layout ══════════════════════════════════════════ */
+function resize(){
+  var r = cvs.getBoundingClientRect();
+  W = Math.max(1, r.width); H = Math.max(1, r.height);
+  DPR = Math.min(2, window.devicePixelRatio || 1);
+  cvs.width = Math.round(W*DPR); cvs.height = Math.round(H*DPR);
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  layout();
+}
+function layout(){
+  caseW = clamp(W*0.56, 224, 440);
+  caseW = Math.min(caseW, W-24);
+  cell  = caseW/7;
+  caseH = clamp(cell*1.45, 46, Math.min(94, H*0.26));
+  gap   = clamp(H*0.11, 38, 86);
+  caseY = H - caseH - gap;
+  caseY = Math.max(caseY, Math.min(H*0.42, H - caseH - 24));
+  pillW = Math.min(cell*1.02, 62);
+  pillH = Math.max(14, pillW*0.52);
+  if(caseX===null){ caseX = (W-caseW)/2; caseTX = caseX; }
+  caseX  = clamp(caseX, 0, W-caseW);
+  caseTX = clamp(caseTX, 0, W-caseW);
+}
+window.addEventListener('resize', resize);
+window.addEventListener('orientationchange', function(){ setTimeout(resize,180); });
+
+/* ══ audio ═══════════════════════════════════════════ */
+var AC=null, soundOn=true, nbuf=null;
+function ac(){
+  if(!AC){ try{ AC = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return null; } }
+  if(AC.state==='suspended'){ AC.resume(); }
+  return AC;
+}
+function tone(f,d,type,g,to){
+  if(!soundOn) return; var a=ac(); if(!a) return;
+  var o=a.createOscillator(), n=a.createGain();
+  o.type=type||'sine';
+  o.frequency.setValueAtTime(f,a.currentTime);
+  if(to) o.frequency.exponentialRampToValueAtTime(Math.max(50,to), a.currentTime+d);
+  n.gain.setValueAtTime(0.0001,a.currentTime);
+  n.gain.linearRampToValueAtTime(g||0.05, a.currentTime+0.006);
+  n.gain.exponentialRampToValueAtTime(0.0001, a.currentTime+d);
+  o.connect(n); n.connect(a.destination); o.start(); o.stop(a.currentTime+d+0.03);
+}
+function noise(d,g,hz){
+  if(!soundOn) return; var a=ac(); if(!a) return;
+  if(!nbuf){
+    nbuf=a.createBuffer(1, a.sampleRate*0.4, a.sampleRate);
+    var ch=nbuf.getChannelData(0);
+    for(var i=0;i<ch.length;i++) ch[i]=Math.random()*2-1;
+  }
+  var s=a.createBufferSource(); s.buffer=nbuf;
+  var f=a.createBiquadFilter(); f.type='highpass'; f.frequency.value=hz||1400;
+  var n=a.createGain();
+  n.gain.setValueAtTime(g||0.06,a.currentTime);
+  n.gain.exponentialRampToValueAtTime(0.0001,a.currentTime+d);
+  s.connect(f); f.connect(n); n.connect(a.destination);
+  s.start(); s.stop(a.currentTime+d+0.02);
+}
+function sfx(kind){
+  if(kind==='snap'){ noise(0.035,0.055,2600); tone(1400,0.045,'square',0.022,900); }
+  else if(kind==='catch'){ tone(760,0.085,'sine',0.05,1180); }
+  else if(kind==='reject'){ noise(0.07,0.07,700); tone(300,0.09,'square',0.03,180); }
+  else if(kind==='bad'){ tone(130,0.24,'sawtooth',0.05,80); }
+  else if(kind==='miss'){ tone(240,0.14,'triangle',0.045,150); }
+  else if(kind==='tick'){ tone(520,0.05,'square',0.02,420); }
+  else if(kind==='week'){ tone(660,0.1,'sine',0.05); setTimeout(function(){tone(880,0.1,'sine',0.05);},95); setTimeout(function(){tone(1320,0.22,'sine',0.045);},190); }
+  else if(kind==='over'){ tone(300,0.3,'sine',0.05,110); setTimeout(function(){tone(200,0.45,'sine',0.04,80);},170); }
+}
+
+/* ══ drawing helpers ═════════════════════════════════ */
+function rr(x,y,w,h,r){
+  r = Math.min(r, w/2, h/2);
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+function track(text,x,y,size,weight,sp,color,align){
+  ctx.font = (weight||800)+' '+size+'px '+FONT;
+  ctx.fillStyle = color||'#000';
+  ctx.textBaseline='middle';
+  var chars=String(text).split(''), tot=0, i;
+  for(i=0;i<chars.length;i++) tot += ctx.measureText(chars[i]).width + sp;
+  tot -= sp;
+  var cx = align==='center' ? x - tot/2 : x;
+  ctx.textAlign='left';
+  for(i=0;i<chars.length;i++){
+    ctx.fillText(chars[i], cx, y);
+    cx += ctx.measureText(chars[i]).width + sp;
+  }
+}
+
+/* ══ game logic ══════════════════════════════════════ */
+function lidC(){
+  if(!S.lid.active) return 0;
+  var t=S.lid.t;
+  if(t<L_IN) return t/L_IN;
+  if(t<L_IN+L_HOLD) return 1;
+  return Math.max(0, 1-(t-L_IN-L_HOLD)/L_OUT);
+}
+function snap(silent){
+  if(S.lid.active || S.cool>0) return;
+  S.lid.active=true; S.lid.t=0; S.cool=LID_T+0.07;
+  if(!silent) sfx('snap');
+}
+function speed(){ return 160 + Math.min(600, S.correct*8); }
+function interval(){ return Math.max(0.42, 1.45 - S.correct*0.030); }
+function contamChance(){ return S.correct<4 ? 0 : Math.min(0.42, (S.correct-4)*0.018); }
+// past a deep run, days start arriving in pairs — the case can only be in one place
+function pairChance(){ return S.correct<26 ? 0 : Math.min(0.5, (S.correct-26)*0.014); }
+
+// Every good pill is spawned FROM a case position, not a screen position.
+// `req` (0..1) is where along its travel the case must sit to catch it, so
+// any pill that appears is always reachable by its own compartment.
+function spawn(req){
+  var attract = S.mode==='attract';
+  var bad = !attract && Math.random() < contamChance();
+  var day = (Math.random()*7)|0;
+  var hh = bad ? pillH*0.64 : pillH/2;
+  var amp = (!attract && S.correct>20) ? rnd(10,24) : 0;
+  var travel = Math.max(0, W - caseW);
+  var x;
+
+  if(bad){
+    // contaminants aren't caught, they're dodged or shut out — spread them freely
+    var m = 20 + pillW/2;
+    x = clamp(rnd(m, W-m), pillW/2+8, W-pillW/2-8);
+    amp = 0;
+  } else {
+    var r = clamp((typeof req==='number') ? req : Math.random(), 0, 1) * travel;
+    var off = cell*(day+0.5);
+    x = r + off;
+    if(amp){
+      var lo = off + amp, hi = travel + off - amp;
+      if(hi <= lo) amp = 0; else x = clamp(x, lo, hi);
+    }
+  }
+
+  var np = {
+    x:x, x0:x, y:-40, hh:hh, day:day, bad:bad,
+    type: bad ? (Math.random()<0.5?'PVC':'AL') : null,
+    vy: attract ? 130 : speed(), vx:0, rot:0, spin:0, a:1,
+    amp:amp, ph:rnd(0,6.28),
+    resolved:false, pass:false, bounced:false, gone:false
+  };
+  S.pills.push(np);
+  return np;
+}
+
+function msg(text){ S.msg = {text:text, t:0, dur:0.95}; }
+function bigMsg(text){ S.bigMsg = {text:text, t:0, dur:1.25}; }
+
+function burst(x,y,n,spread){
+  if(RM) return;
+  for(var i=0;i<n;i++){
+    S.parts.push({x:x,y:y,vx:rnd(-spread,spread),vy:rnd(-spread*1.2,-30),s:rnd(2,4.5),a:1,g:rnd(700,1100)});
+  }
+  if(S.parts.length>70) S.parts.splice(0, S.parts.length-70);
+}
+function pop(x,y,text){ S.pops.push({x:x,y:y,text:text,t:0,dur:0.8}); }
+function cellFx(i,kind){ S.cellFx.push({i:i,t:0,dur:kind==='bad'?0.6:0.45,kind:kind}); }
+
+function bounce(p){
+  p.bounced=true; p.resolved=true;
+  p.vy = -Math.max(210, p.vy*0.5);
+  p.vx = (p.x < caseX+caseW/2 ? -1 : 1) * rnd(70,190);
+  p.spin = rnd(-9,9);
+  p.a = 1;
+}
+
+function addScore(n){
+  var mult = 1 + Math.min(4, Math.floor(S.streak/5));
+  S.score += n*mult;
+  return n*mult;
+}
+
+function resolve(p){
+  p.resolved = true;
+  var closed = lidC() > 0.55;
+  var idx = Math.floor((p.x - caseX)/cell);
+
+  if(closed){
+    bounce(p);
+    S.caseKick = 1;
+    burst(p.x, caseY, 7, 150);
+    if(S.mode==='play'){
+      if(p.bad){ S.score += 5; pop(p.x, caseY-16, '+5'); msg('Rejected'); sfx('reject'); }
+      else { S.streak=0; msg('Lid shut'); sfx('tick'); }
+    }
+    return;
+  }
+
+  if(idx<0 || idx>6){ p.pass=true; return; }
+
+  if(p.bad){
+    p.gone=true;
+    if(S.mode==='play'){
+      S.lives--; S.streak=0; S.shake=1;
+      cellFx(idx,'bad'); burst(p.x, caseY+caseH*0.4, 14, 210);
+      msg('Contaminated'); sfx('bad');
+      if(S.lives<=0) gameOver();
+    }
+    return;
+  }
+
+  if(idx === p.day){
+    p.gone=true;
+    cellFx(idx,'good');
+    if(S.mode==='play'){
+      S.streak++; S.correct++;
+      var got = addScore(10);
+      pop(caseX + cell*(idx+0.5), caseY-14, '+'+got);
+      S.wp++;
+      burst(p.x, caseY+8, 6, 110);
+      if(S.wp>=7){
+        S.wp=0; S.weeks++; S.score += 50;
+        bigMsg('Week '+String(S.weeks).padStart(2,'0')+' kept');
+        sfx('week');
+      } else {
+        sfx('catch');
+      }
+    }
+    return;
+  }
+
+  bounce(p); S.caseKick=0.7;
+  if(S.mode==='play'){ S.streak=0; msg('Wrong day'); sfx('tick'); }
+}
+
+function escaped(p){
+  if(S.mode!=='play') return;
+  if(p.bad){ S.score += 3; msg('Dodged'); }
+  else {
+    S.lives--; S.streak=0; S.shake=0.8;
+    msg('Missed'); sfx('miss');
+    if(S.lives<=0) gameOver();
+  }
+}
+
+/* ══ state changes ═══════════════════════════════════ */
+function lock(on){ root.classList.toggle('lock', on); }
+
+function startGame(){
+  ac();
+  if(window.scrollY>2){ try{ window.scrollTo({top:0,behavior:'instant'}); }catch(e){ window.scrollTo(0,0); } }
+  lock(true);
+  S.mode='play'; stage.dataset.mode='play';
+  S.pills=[]; S.parts=[]; S.pops=[]; S.cellFx=[];
+  S.score=0; S.weeks=0; S.wp=0; S.streak=0; S.lives=3; S.correct=0;
+  S.spawnT=1.0; S.msg=null; S.bigMsg=null; S.shake=0;
+  S.lid.active=false; S.lid.t=0; S.cool=0;
+  caseTX = (W-caseW)/2;
+  hideOv(intro);
+  if(!over.hidden) closeModal();
+  hud.classList.add('on'); hud.setAttribute('aria-hidden','false');
+  syncHUD(true);
+}
+function gameOver(){
+  S.mode='over'; stage.dataset.mode='over';
+  S.lives=0;
+  if(S.score>best){ best=S.score; store('pillycase:best', String(best)); }
+  sfx('over');
+  overWeeks.textContent = String(S.weeks).padStart(2,'0');
+  overKick.textContent  = S.weeks>0 ? 'The week got away' : 'That was day one';
+  overScore.textContent = S.score;
+  overBest.textContent  = best;
+  syncHUD(true);
+  setTimeout(function(){
+    hud.classList.remove('on'); hud.setAttribute('aria-hidden','true');
+    openModal();
+  }, 520);
+}
+// back to the idle hero: ambient pills, intro copy, page scrolls again
+function toAttract(){
+  S.mode='attract'; stage.dataset.mode='attract';
+  S.pills=[]; S.msg=null; S.bigMsg=null;
+  S.spawnT=0.4; S.nextAuto=S.t+2.5;
+  showOv(intro);
+  lock(false);
+}
+
+var intro=document.getElementById('intro'), over=document.getElementById('over'), hud=document.getElementById('hud');
+var overWeeks=document.getElementById('overWeeks'), overKick=document.getElementById('overKick');
+var overScore=document.getElementById('overScore'), overBest=document.getElementById('overBest');
+function hideOv(el){ el.classList.add('out'); setTimeout(function(){ if(el.classList.contains('out')) el.hidden=true; }, 380); }
+function showOv(el){ el.hidden=false; el.classList.add('out');
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ el.classList.remove('out'); }); }); }
+
+/* ══ sign-up popup (after death) ═════════════════════ */
+var card=over.querySelector('.card');
+var bgEls=[document.getElementById('app'), document.getElementById('case'), document.getElementById('foot')];
+function setInert(on){
+  for(var i=0;i<bgEls.length;i++){
+    if(!bgEls[i]) continue;
+    bgEls[i].inert = on;
+    if(on) bgEls[i].setAttribute('inert',''); else bgEls[i].removeAttribute('inert');
+  }
+}
+function openModal(){
+  showOv(over);
+  setInert(true);
+  // don't pop the keyboard on phones; just move focus into the dialog
+  try{ card.focus({preventScroll:true}); }catch(e){ card.focus(); }
+}
+function closeModal(then){
+  over.classList.add('out');
+  setInert(false);
+  setTimeout(function(){ if(over.classList.contains('out')) over.hidden=true; if(then) then(); }, 320);
+}
+function scrollToCase(){
+  document.getElementById('case').scrollIntoView({behavior: RM ? 'auto' : 'smooth'});
+}
+
+/* ══ HUD ═════════════════════════════════════════════ */
+var vWeeks=document.getElementById('vWeeks'), vScore=document.getElementById('vScore');
+var dotsEl=document.getElementById('dots'), livesEl=document.getElementById('lives');
+var dotN=[], lifeN=[], cache={};
+(function(){
+  for(var i=0;i<7;i++){ var d=document.createElement('i'); dotsEl.appendChild(d); dotN.push(d); }
+  for(var j=0;j<3;j++){ var l=document.createElement('i'); livesEl.appendChild(l); lifeN.push(l); }
+})();
+function syncHUD(force){
+  if(force || cache.w!==S.weeks){ vWeeks.textContent = String(S.weeks).padStart(2,'0'); cache.w=S.weeks; }
+  if(force || cache.s!==S.score){ vScore.textContent = S.score; cache.s=S.score; }
+  if(force || cache.p!==S.wp){ for(var i=0;i<7;i++) dotN[i].classList.toggle('on', i<S.wp); cache.p=S.wp; }
+  if(force || cache.l!==S.lives){ for(var j=0;j<3;j++) lifeN[j].classList.toggle('off', j>=S.lives); cache.l=S.lives; }
+}
+
+/* ══ update ══════════════════════════════════════════ */
+function update(dt){
+  S.t += dt;
+  if(S.shake>0) S.shake = Math.max(0, S.shake - dt*3.0);
+  if(S.caseKick>0) S.caseKick = Math.max(0, S.caseKick - dt*4.0);
+  if(S.cool>0) S.cool -= dt;
+
+  if(S.lid.active){ S.lid.t += dt; if(S.lid.t>=LID_T){ S.lid.active=false; S.lid.t=0; } }
+
+  if(S.mode==='attract'){
+    var low=null, ly=-1e9;
+    for(var a=0;a<S.pills.length;a++){ var q=S.pills[a]; if(!q.resolved && q.y>ly){ ly=q.y; low=q; } }
+    if(low) caseTX = clamp(low.x - cell*(low.day+0.5), 0, W-caseW);
+    if(S.t > S.nextAuto){ S.nextAuto = S.t + rnd(4.5,7.5); snap(true); }
+  }
+  caseX += (caseTX - caseX) * Math.min(1, dt*(S.mode==='attract'?4.2:18));
+
+  if(S.mode!=='over'){
+    S.spawnT -= dt;
+    if(S.spawnT<=0){
+      var firstReq = Math.random();
+      spawn(firstReq);
+      if(S.mode==='play' && Math.random()<pairChance()){
+        // the twin demands a distant case position — both stay reachable,
+        // but not at the same time. That's the pressure.
+        var tr = firstReq < 0.5 ? rnd(0.62, 1) : rnd(0, 0.38);
+        var twin = spawn(tr);
+        if(twin) twin.y = -40 - rnd(30,110);
+      }
+      S.spawnT = (S.mode==='attract') ? 1.35 : interval();
+    }
+  }
+
+  for(var i=S.pills.length-1;i>=0;i--){
+    var p=S.pills[i];
+    if(p.gone){ S.pills.splice(i,1); continue; }
+    if(p.bounced){
+      p.vy += 1700*dt; p.x += p.vx*dt; p.y += p.vy*dt; p.rot += p.spin*dt; p.a -= dt*1.5;
+      if(p.a<=0 || p.y>H+90) S.pills.splice(i,1);
+      continue;
+    }
+    if(S.mode==='over'){ p.a -= dt*1.8; if(p.a<=0) S.pills.splice(i,1); continue; }
+    p.y += p.vy*dt;
+    if(p.amp) p.x = p.x0 + Math.sin(S.t*1.7 + p.ph)*p.amp;
+    if(!p.resolved && p.y + p.hh >= caseY) resolve(p);
+    if(p.gone){ S.pills.splice(i,1); continue; }
+    if(p.y - p.hh > H+24){ if(p.pass) escaped(p); S.pills.splice(i,1); }
+  }
+
+  for(var b=S.parts.length-1;b>=0;b--){
+    var pt=S.parts[b]; pt.vy+=pt.g*dt; pt.x+=pt.vx*dt; pt.y+=pt.vy*dt; pt.a-=dt*1.8;
+    if(pt.a<=0) S.parts.splice(b,1);
+  }
+  for(var c=S.pops.length-1;c>=0;c--){ S.pops[c].t+=dt; if(S.pops[c].t>S.pops[c].dur) S.pops.splice(c,1); }
+  for(var d=S.cellFx.length-1;d>=0;d--){ S.cellFx[d].t+=dt; if(S.cellFx[d].t>S.cellFx[d].dur) S.cellFx.splice(d,1); }
+  if(S.msg){ S.msg.t+=dt; if(S.msg.t>S.msg.dur) S.msg=null; }
+  if(S.bigMsg){ S.bigMsg.t+=dt; if(S.bigMsg.t>S.bigMsg.dur) S.bigMsg=null; }
+
+  if(S.mode==='play') syncHUD(false);
+}
+
+/* ══ render ══════════════════════════════════════════ */
+function render(){
+  ctx.clearRect(0,0,W,H);
+
+  var sx=0, sy=0;
+  if(S.shake>0 && !RM){ var m=S.shake*S.shake*7; sx=rnd(-m,m); sy=rnd(-m,m); }
+  ctx.save(); ctx.translate(sx,sy);
+
+  var bob = (S.mode==='attract') ? Math.sin(S.t*1.15)*2 : 0;
+  var kick = S.caseKick*4;
+  var cy = caseY + bob + kick;
+
+  // every incoming day gets its compartment marked; the closest one gets it strongly
+  var lead=null, ly=-1e9, i, p;
+  for(i=0;i<S.pills.length;i++){
+    p=S.pills[i];
+    if(p.resolved||p.bad) continue;
+    if(p.y>ly){ ly=p.y; lead=p; }
+  }
+  var tgt=[0,0,0,0,0,0,0]; // 0 none, 1 queued, 2 lead, 3 lead+aligned
+  for(i=0;i<S.pills.length;i++){
+    p=S.pills[i];
+    if(p.resolved||p.bad) continue;
+    var lvl = (p===lead) ? (Math.floor((p.x-caseX)/cell)===p.day ? 3 : 2) : 1;
+    if(lvl>tgt[p.day]) tgt[p.day]=lvl;
+  }
+  var hlIdx = lead ? lead.day : -1;
+
+  drawGuides(cy);
+  drawCase(caseX, cy, tgt);
+  drawLid(caseX, cy, lidC());
+  drawMarker(cy, hlIdx, lead ? tgt[lead.day]===3 : false);
+
+  for(var j=0;j<S.pills.length;j++) drawPill(S.pills[j]);
+
+  // particles
+  for(var k=0;k<S.parts.length;k++){
+    var q=S.parts[k];
+    ctx.globalAlpha=Math.max(0,q.a); ctx.fillStyle='#000';
+    ctx.fillRect(q.x-q.s/2, q.y-q.s/2, q.s, q.s);
+  }
+  ctx.globalAlpha=1;
+
+  // score pops
+  for(var m2=0;m2<S.pops.length;m2++){
+    var o=S.pops[m2], pr=o.t/o.dur;
+    ctx.globalAlpha=Math.max(0,1-pr);
+    ctx.font='900 '+Math.max(13, Math.min(20, cell*0.42))+'px '+FONT;
+    ctx.fillStyle='#000'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillText(o.text, o.x, o.y - pr*26);
+  }
+  ctx.globalAlpha=1;
+
+  drawMessages(cy);
+  ctx.restore();
+}
+
+function drawGuides(cy){
+  ctx.save();
+  ctx.lineWidth=1;
+  ctx.globalAlpha = (S.mode==='attract') ? 0.4 : 1;
+  for(var i=0;i<S.pills.length;i++){
+    var p=S.pills[i];
+    if(p.resolved||p.bounced) continue;
+    var top=p.y+p.hh+3;
+    if(top>=cy-2) continue;
+    ctx.setLineDash(p.bad?[2,5]:[2,7]);
+    ctx.strokeStyle = p.bad ? 'rgba(0,0,0,.42)' : 'rgba(0,0,0,.17)';
+    var gx=Math.round(p.x)+0.5;
+    ctx.beginPath(); ctx.moveTo(gx, top); ctx.lineTo(gx, cy-1); ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  ctx.restore();
+}
+
+function drawCase(x, y, tgt){
+  var w=caseW, h=caseH, r=Math.min(h*0.3, 17);
+  ctx.save();
+
+  rr(x,y,w,h,r);
+  ctx.fillStyle='#fff'; ctx.fill();
+  ctx.lineWidth=2.2; ctx.strokeStyle='#000'; ctx.stroke();
+
+  var ins=Math.max(4, h*0.115);
+  var ix=x+ins, iy=y+ins, iw=w-ins*2, ih=h-ins*2, ir=Math.max(3, r-ins*0.75);
+
+  rr(ix,iy,iw,ih,ir);
+  var g=ctx.createLinearGradient(0,iy,0,iy+ih);
+  g.addColorStop(0,'#e4e4e4'); g.addColorStop(0.30,'#fbfbfb');
+  g.addColorStop(0.72,'#f0f0f0'); g.addColorStop(1,'#e7e7e7');
+  ctx.fillStyle=g; ctx.fill();
+
+  ctx.save(); ctx.clip();
+  // brushed grain
+  ctx.strokeStyle='rgba(0,0,0,.05)'; ctx.lineWidth=1;
+  for(var b=1;b<7;b++){
+    var yy=Math.round(iy+ih*b/7)+0.5;
+    ctx.beginPath(); ctx.moveTo(ix,yy); ctx.lineTo(ix+iw,yy); ctx.stroke();
+  }
+  // targeted-compartment tint, by urgency
+  var TINT=[0,.035,.06,.15];
+  for(var tg=0;tg<7;tg++){
+    if(!tgt[tg]) continue;
+    ctx.fillStyle='rgba(0,0,0,'+TINT[tgt[tg]]+')';
+    ctx.fillRect(x+cell*tg, iy, cell, ih);
+  }
+  // cell effects
+  for(var f=0;f<S.cellFx.length;f++){
+    var fx=S.cellFx[f], pr=fx.t/fx.dur, al=Math.max(0,1-pr);
+    ctx.fillStyle = fx.kind==='bad' ? 'rgba(0,0,0,'+(al*0.85)+')' : 'rgba(0,0,0,'+(al*0.55)+')';
+    ctx.fillRect(x+cell*fx.i, iy, cell, ih);
+  }
+  ctx.restore();
+
+  // dividers
+  ctx.strokeStyle='rgba(0,0,0,.2)'; ctx.lineWidth=1;
+  for(var i=1;i<7;i++){
+    var xx=Math.round(x+cell*i)+0.5;
+    ctx.beginPath(); ctx.moveTo(xx, iy+1.5); ctx.lineTo(xx, iy+ih-1.5); ctx.stroke();
+  }
+
+  // day labels
+  var fs=Math.max(8, h*0.155);
+  var ly=iy+ih-Math.max(5, h*0.115);
+  var LAB=['rgba(0,0,0,.3)','rgba(0,0,0,.5)','rgba(0,0,0,.78)','rgba(0,0,0,.92)'];
+  for(var d=0;d<7;d++){
+    track(DAYS[d], x+cell*(d+0.5), ly, fs, 800, fs*0.13, LAB[tgt[d]], 'center');
+  }
+  ctx.restore();
+}
+
+function drawLid(x, y, c){
+  if(c<=0.002) return;
+  var w=caseW, h=caseH, r=Math.min(h*0.3, 17);
+  ctx.save();
+  rr(x,y,w,h,r); ctx.save(); ctx.clip();
+  var lw=w*c;
+  ctx.fillStyle='#000'; ctx.fillRect(x, y, lw, h);
+  ctx.fillStyle='rgba(255,255,255,.9)'; ctx.fillRect(x+lw-2.2, y, 2.2, h);
+  ctx.restore();
+
+  if(c>0.88){
+    var a=(c-0.88)/0.12;
+    var mw=Math.min(caseW*0.16, 46), mh=mw*0.46;
+    ctx.globalAlpha=a;
+    ctx.strokeStyle='#fff'; ctx.lineWidth=2;
+    rr(x+w/2-mw/2, y+h/2-mh/2, mw, mh, mh/2); ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x+w/2, y+h/2-mh/2+1); ctx.lineTo(x+w/2, y+h/2+mh/2-1); ctx.stroke();
+    ctx.globalAlpha=1;
+  }
+  rr(x,y,w,h,r); ctx.lineWidth=2.2; ctx.strokeStyle='#000'; ctx.stroke();
+  ctx.restore();
+}
+
+function drawMarker(cy, hlIdx, aligned){
+  if(hlIdx<0 || S.mode==='over') return;
+  var y=cy+caseH+gap*0.24;
+  var cx=caseX+cell*(hlIdx+0.5);
+  ctx.save();
+  ctx.fillStyle = aligned ? '#000' : 'rgba(0,0,0,.28)';
+  var bw=Math.min(cell*0.5, 30);
+  ctx.fillRect(cx-bw/2, y, bw, aligned?3:1.5);
+  ctx.restore();
+}
+
+function drawPill(p){
+  var pw=pillW, ph=pillH;
+  ctx.save();
+  ctx.globalAlpha=Math.max(0, p.a) * (S.mode==='attract'?0.3:1);
+  ctx.translate(p.x, p.y);
+  if(p.rot) ctx.rotate(p.rot);
+
+  if(!p.bad){
+    rr(-pw/2, -ph/2, pw, ph, ph/2);
+    ctx.fillStyle='#000'; ctx.fill();
+    // capsule seam ticks
+    ctx.strokeStyle='rgba(255,255,255,.85)'; ctx.lineWidth=1.3;
+    ctx.beginPath();
+    ctx.moveTo(0,-ph/2+0.5); ctx.lineTo(0,-ph/2+ph*0.2);
+    ctx.moveTo(0, ph/2-0.5); ctx.lineTo(0, ph/2-ph*0.2);
+    ctx.stroke();
+    var fs=Math.max(8.5, ph*0.5);
+    track(DAYS[p.day], 0, 0.5, fs, 800, fs*0.1, '#fff', 'center');
+  } else {
+    var bh=ph*1.28, bw=pw;
+    rr(-bw/2, -bh/2, bw, bh, Math.min(6, bh*0.26));
+    ctx.fillStyle='#fff'; ctx.fill();
+    ctx.setLineDash([4,3.2]); ctx.lineWidth=2; ctx.strokeStyle='#000'; ctx.stroke();
+    ctx.setLineDash([]);
+    var f2=Math.max(7.5, ph*0.48);
+    track(p.type, 0, 0.5, f2, 800, f2*0.1, '#000', 'center');
+  }
+  ctx.restore();
+}
+
+function drawMessages(cy){
+  if(S.msg){
+    var pr=S.msg.t/S.msg.dur, a=pr<0.12 ? pr/0.12 : Math.max(0,(1-pr)/0.5);
+    ctx.globalAlpha=Math.min(1,a);
+    var fs=Math.max(10, Math.min(14, W*0.03));
+    track(S.msg.text.toUpperCase(), W/2, cy+caseH+gap*0.66, fs, 800, fs*0.22, '#000', 'center');
+    ctx.globalAlpha=1;
+  }
+  if(S.bigMsg){
+    var pr2=S.bigMsg.t/S.bigMsg.dur, a2=pr2<0.1 ? pr2/0.1 : Math.max(0,(1-pr2)/0.45);
+    ctx.globalAlpha=Math.min(1,a2);
+    var f=Math.max(20, Math.min(46, W*0.075));
+    ctx.font='900 '+f+'px '+FONT; ctx.textAlign='center'; ctx.textBaseline='middle';
+    ctx.fillStyle='#000';
+    ctx.fillText(S.bigMsg.text.toUpperCase(), W/2, cy - caseH*1.5 - pr2*10);
+    ctx.globalAlpha=1;
+  }
+}
+
+/* ══ input ═══════════════════════════════════════════ */
+var ptr={id:null,t0:0,x0:0,moved:0,baseTX:0,touch:false};
+var DRAG_GAIN=1.35;
+function setTarget(clientX){
+  var r=cvs.getBoundingClientRect();
+  caseTX = clamp(clientX - r.left - caseW/2, 0, W-caseW);
+}
+function dragTo(clientX){
+  caseTX = clamp(ptr.baseTX + (clientX-ptr.x0)*DRAG_GAIN, 0, W-caseW);
+}
+function isUI(e){ return e.target && e.target.closest && e.target.closest('button'); }
+
+stage.addEventListener('pointerdown', function(e){
+  if(isUI(e)) return;
+  if(S.mode!=='play') return;
+  if(ptr.id===null){
+    ptr.id=e.pointerId; ptr.t0=performance.now(); ptr.x0=e.clientX; ptr.moved=0;
+    ptr.baseTX=caseTX; ptr.touch=(e.pointerType!=='mouse');
+    // mouse steers absolutely; touch drags relatively so the finger
+    // never sits on top of the case and the edges never dead-zone
+    if(!ptr.touch){ setTarget(e.clientX); snap(); }
+  } else {
+    snap();
+  }
+  if(cvs.setPointerCapture){ try{ cvs.setPointerCapture(e.pointerId); }catch(err){} }
+});
+stage.addEventListener('pointermove', function(e){
+  if(S.mode!=='play') return;
+  if(e.pointerType==='mouse'){ setTarget(e.clientX); return; }
+  if(e.pointerId===ptr.id){
+    ptr.moved=Math.max(ptr.moved, Math.abs(e.clientX-ptr.x0));
+    dragTo(e.clientX);
+  }
+});
+function endPtr(e){
+  if(e.pointerId!==ptr.id) return;
+  if(S.mode==='play' && e.pointerType!=='mouse' && (performance.now()-ptr.t0)<270 && ptr.moved<12) snap();
+  ptr.id=null;
+}
+stage.addEventListener('pointerup', endPtr);
+stage.addEventListener('pointercancel', function(e){ if(e.pointerId===ptr.id) ptr.id=null; });
+
+function heroInView(){ return window.scrollY < 40; }
+
+window.addEventListener('keydown', function(e){
+  var k=e.key, t=e.target;
+  var typing = t && (t.tagName==='INPUT' || t.tagName==='TEXTAREA' || t.isContentEditable);
+
+  if(k==='Escape' && !over.hidden){ e.preventDefault(); closeModal(toAttract); return; }
+
+  if(k===' '||k==='Spacebar'){
+    if(S.mode==='play'){ e.preventDefault(); snap(); return; }
+    if(typing || (t && t.closest && t.closest('button,a'))) return;   // let native controls work
+    if(S.mode==='attract' && heroInView()){ e.preventDefault(); startGame(); }
+    else if(S.mode==='over' && !over.hidden){ e.preventDefault(); startGame(); }
+    return;
+  }
+  if(S.mode!=='play') return;
+  if(k==='ArrowLeft'){ e.preventDefault(); caseTX=clamp(caseTX-cell*0.95,0,W-caseW); }
+  if(k==='ArrowRight'){ e.preventDefault(); caseTX=clamp(caseTX+cell*0.95,0,W-caseW); }
+}, {passive:false});
+
+document.getElementById('start').addEventListener('click', startGame);
+document.getElementById('again').addEventListener('click', startGame);
+document.getElementById('close').addEventListener('click', function(){ closeModal(toAttract); });
+over.addEventListener('click', function(e){ if(e.target===over) closeModal(toAttract); });
+document.getElementById('toCase').addEventListener('click', function(e){
+  e.preventDefault();
+  closeModal(function(){ toAttract(); requestAnimationFrame(scrollToCase); });
+});
+
+/* ══ waitlist ════════════════════════════════════════ */
+var ENDPOINT='https://script.google.com/macros/s/AKfycbyx4d7V9Jk_NZFjKx67Tt7i9ZlFOvnMFYU8YtowfePpaTn6cuonAoY8bZniefYVDWaw/exec';
+var EMAIL_RE=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+Array.prototype.forEach.call(document.querySelectorAll('.js-waitlist'), function(form){
+  var input=form.elements.email, btn=form.querySelector('button'), status=form.querySelector('.status');
+  function say(text, err){ status.textContent=text; status.classList.toggle('err', !!err); }
+  function done(){
+    store('pillycase:joined','1');
+    root.classList.add('is-joined');
+    form.reset(); btn.disabled=false; say('');
+    sfx('week');
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email=input.value.trim();
+    if(!EMAIL_RE.test(email)){ say('Enter a valid email address, like you@example.com.', true); input.focus(); return; }
+    if(form.elements.company && form.elements.company.value){ done(); return; }   // honeypot: bots fill it, people don't
+    btn.disabled=true; say('Joining…');
+    fetch(ENDPOINT, {
+      method:'POST', mode:'no-cors',
+      headers:{'Content-Type':'application/x-www-form-urlencoded'},
+      body:'email='+encodeURIComponent(email)
+    }).then(done).catch(function(){
+      btn.disabled=false;
+      say('Couldn\'t reach the waitlist. Check your connection and try again.', true);
+    });
+  });
+});
+
+var soundBtn=document.getElementById('sound');
+soundBtn.addEventListener('click', function(){
+  soundOn=!soundOn;
+  soundBtn.textContent = soundOn ? 'Sound on' : 'Sound off';
+  soundBtn.setAttribute('aria-pressed', String(soundOn));
+  soundBtn.classList.toggle('dim', !soundOn);
+  if(soundOn) sfx('tick');
+});
+
+document.getElementById('keys').textContent = COARSE
+  ? 'Drag to sort · tap to snap the lid'
+  : 'Move to sort · click or space to snap the lid';
+
+/* ══ loop ════════════════════════════════════════════ */
+var last=0, heroVis=true;
+if('IntersectionObserver' in window){
+  new IntersectionObserver(function(es){
+    heroVis = es[0].isIntersecting;
+    if(heroVis) last=performance.now();
+  }).observe(document.getElementById('app'));
+}
+function frame(now){
+  if(!heroVis && S.mode!=='play'){ last=now; requestAnimationFrame(frame); return; }
+  var dt=(now-last)/1000; last=now;
+  if(!(dt>0) || dt>0.25) dt=1/60;
+  update(dt); render();
+  requestAnimationFrame(frame);
+}
+document.addEventListener('visibilitychange', function(){ last=performance.now(); });
+
+function boot(){
+  resize();
+  last=performance.now();
+  requestAnimationFrame(frame);
+}
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(boot).catch(boot); }
+else { boot(); }
+
+})();
+</script>
 </body>
 </html>
